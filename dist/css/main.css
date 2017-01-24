@@ -976,7 +976,8 @@ h3, .h3 {
   color: #d3a87c;
   text-transform: uppercase;
   margin-top: 2rem;
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  word-break: break-all; }
 
 h1, .h1 {
   font-size: 3rem; }
@@ -1139,7 +1140,7 @@ a.logo {
       text-decoration: underline; } }
   @media (min-width: 1200px) {
     #nav .active a {
-      padding-left: 2rem; } }
+      padding-left: 3rem; } }
   #nav a {
     color: #d3a87c;
     text-decoration: none;
@@ -1149,7 +1150,7 @@ a.logo {
         text-decoration: underline; } }
     @media (min-width: 1200px) {
       #nav a:hover, #nav a:focus {
-        padding-left: 2rem; } }
+        padding-left: 3rem; } }
     #nav a:focus {
       outline: thin dotted;
       outline: 5px auto -webkit-focus-ring-color;
@@ -1197,4 +1198,4 @@ a.logo {
 
 @media (max-width: 767px) {
   .room-where {
-    margin: 1.5rem 0 0; } }
+    margin: 2rem 0 0; } }

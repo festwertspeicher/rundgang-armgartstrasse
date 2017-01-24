@@ -64,13 +64,13 @@ h3, .h3 { font-size: $font-size-h3; }
 h4, .h4 {
   text-transform: uppercase;
   font-weight: 400;
-  margin: 0 0 1rem;
+  margin: 0 0 $line-height-small-computed;
 }
 
 h5, .h5 {
   color: $headings-color;
   font-weight: 600;
-  margin: 1rem 0;
+  margin: $line-height-small-computed 0;
 }
 
 // Body text

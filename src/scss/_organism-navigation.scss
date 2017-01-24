@@ -33,7 +33,7 @@ a.logo {
         text-decoration: underline;
       }
       @media (min-width: $screen-lg-min) {
-        padding-left: 2rem;
+        padding-left: $space-large-horizontal;
       }
     }
   }
@@ -49,7 +49,7 @@ a.logo {
         text-decoration: underline;
       }
       @media (min-width: $screen-lg-min) {
-        padding-left: 2rem;
+        padding-left: $space-large-horizontal;
       }
     }
 
@@ -60,7 +60,7 @@ a.logo {
 
   .nav {
     @media (max-width: $screen-md-max) {
-      margin-top: 1rem;
+      margin-top: $space-small-vertical;
       @include list-unstyled;
       margin-left: -5px;
 

@@ -19,6 +19,6 @@
 
 .room-where {
   @media (max-width: $screen-xs-max) {
-    margin: 1.5rem 0 0;
+    margin: $space-base-vertical 0 0;
   }
 }
