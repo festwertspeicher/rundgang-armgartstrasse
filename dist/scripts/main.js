@@ -544,19 +544,20 @@ function initialize() {
     disableDefaultUI: true
   };
 
+  var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+
+  var image = '/dist/img/marker.png';
+
   var marker = new google.maps.Marker({
     position: myLatLng,
     map: map,
-    title: 'Hochschule für angewandte Wissenschaften Hamburg Modecampus Armgartstraße (HAW Hamburg)'
+    title: 'Hochschule für angewandte Wissenschaften Hamburg Modecampus Armgartstraße (HAW Hamburg)',
+    icon: image
   });
 
-
-  var map = new google.maps.Map(document.getElementById('map'),
-    mapOptions);
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
-
 
 /* ========================================================================
  * Bootstrap: scrollspy.js v3.3.7

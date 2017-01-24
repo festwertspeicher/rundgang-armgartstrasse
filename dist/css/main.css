@@ -1175,10 +1175,10 @@ a.logo {
 .event-language::before {
   content: ' '; }
 
-.introduction {
+#main {
   margin-top: 24rem; }
   @media (max-width: 1199px) {
-    .introduction {
+    #main {
       margin-top: 6rem; } }
 
 #map {
