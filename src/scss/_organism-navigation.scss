@@ -1,0 +1,81 @@
+//
+// navigation
+// --------------------------------------------------
+$affix-offset: $space-base-vertical;
+
+a.logo {
+  color: $brand-primary;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $brand-primary;
+    text-decoration: none;
+  }
+}
+
+#nav {
+  z-index: 1;
+  background-color: $body-bg;
+
+  @media (min-width: $screen-lg-min) {
+    top: 0 + $affix-offset; // for affix
+  }
+
+  @media (max-width: $screen-md-max) {
+    top: 0; // for affix
+    width: 100%;
+  }
+
+  .active {
+    a {
+      @media (max-width: $screen-md-max) {
+        text-decoration: underline;
+      }
+      @media (min-width: $screen-lg-min) {
+        padding-left: 2rem;
+      }
+    }
+  }
+
+  a {
+    color: $link-color;
+    text-decoration: none;
+    transition: 0.15s padding ease-out;
+
+    &:hover,
+    &:focus {
+      @media (max-width: $screen-md-max) {
+        text-decoration: underline;
+      }
+      @media (min-width: $screen-lg-min) {
+        padding-left: 2rem;
+      }
+    }
+
+    &:focus {
+      @include tab-focus();
+    }
+  }
+
+  .nav {
+    @media (max-width: $screen-md-max) {
+      margin-top: 1rem;
+      @include list-unstyled;
+      margin-left: -5px;
+
+      > li {
+        display: inline-block;
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+    }
+  }
+
+  .social-media {
+    @media (max-width: $screen-md-max) {
+      display: none
+    }
+  }
+
+}

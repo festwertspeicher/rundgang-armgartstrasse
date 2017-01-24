@@ -1,0 +1,24 @@
+//
+// raumplan
+// --------------------------------------------------
+
+.floor::after {
+  content: ' ';
+}
+
+#raumplan {
+  h5 {
+    color: $text-color;
+    display: inline;
+  }
+}
+
+.room-description {
+  display: inline;
+}
+
+.room-where {
+  @media (max-width: $screen-xs-max) {
+    margin: 1.5rem 0 0;
+  }
+}

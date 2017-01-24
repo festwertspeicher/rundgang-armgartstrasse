@@ -1,0 +1,15 @@
+//
+// Veranstaltungen (symposium und performances)
+// --------------------------------------------------
+
+.event-type {
+  &::after {
+    content: ' ';
+  }
+}
+
+.event-language {
+  &::before {
+    content: ' ';
+  }
+}

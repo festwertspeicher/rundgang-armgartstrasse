@@ -1,0 +1,23 @@
+//
+// For Synchronice-Breakpoints plugin
+// -------------------------
+
+body::before {
+  display: none;
+
+  @media (max-width: $screen-xs-max) { // 0 - 767
+    content: 'xs'
+  }
+
+  @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) { // 768 - 991
+    content: 'sm'
+  }
+
+  @media (min-width: $screen-md-min) and (max-width: $screen-md-max) { // 992 - 1199
+    content: 'md'
+  }
+
+  @media (min-width: $screen-lg-min) { // ab 1200
+    content: 'lg'
+  }
+}

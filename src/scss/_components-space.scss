@@ -1,0 +1,22 @@
+//
+// Space
+// --------------------------------------------------
+
+$space-small-minus-vertical: $line-height-small-minus-computed !default;
+$space-small-minus-horizontal: $space-small-minus-vertical !default;
+
+$space-small-vertical: $line-height-small-computed !default; // 16px
+$space-small-horizontal: $space-small-vertical !default;
+
+$space-base-vertical: $line-height-base-computed !default; // 24px
+$space-base-horizontal: $space-base-vertical !default;
+
+$space-large-vertical: $line-height-large-computed !default; // 32px
+$space-large-horizontal: $space-large-vertical !default;
+
+$space-large-plus-vertical: $line-height-large-plus-computed !default; //48px
+$space-large-plus-horizontal: $space-large-plus-vertical !default;
+
+section {
+  margin-bottom: $space-large-plus-vertical * 2;
+}
