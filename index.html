@@ -675,19 +675,6 @@
           }
         });
 
-        $(document).ready(function (){
-          'use strict';
-
-          /*
-          * Scrollspy Hashchange
-          * Hash change on scroll with Bootstrap 3 Scrollspy
-          * Author: Franco Moya - @iamravenous
-          */
-
-          $(window).on('activate.bs.scrollspy', function (e) {
-            history.replaceState({}, "", $("a[href^='#']", e.target).attr("href"));
-          });
-        });
       })(jQuery);
     </script>
   </body>
