@@ -957,6 +957,13 @@ body {
   background-color: transparent;
   border: 0; }
 
+.hidden-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0; }
+
 .sr-only {
   position: absolute;
   width: 1px;
@@ -1170,7 +1177,7 @@ a.logo {
       display: none; } }
 
 .event-type::after {
-  content: ' '; }
+  content: ': '; }
 
 .event-language::before {
   content: ' '; }
