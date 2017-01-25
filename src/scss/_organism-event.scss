@@ -4,12 +4,49 @@
 
 .event-type {
   &::after {
-    content: ': ';
+    content: ' ';
   }
 }
 
 .event-language {
   &::before {
     content: ' ';
+  }
+}
+
+.day {
+  margin-bottom: $space-large-vertical;
+}
+
+.event {
+  @include clearfix;
+  margin-bottom: $space-base-vertical;
+}
+
+#symposium {
+  h3 {
+    margin: 0 0 $line-height-small-computed;
+  }
+}
+
+.event-more-collapse {
+  &::after {
+    content: ' -';
+  }
+  &.collapsed::after {
+    content: ' +';
+  }
+}
+
+.cancelled {
+  h5, p {
+    text-decoration: line-through;
+  }
+  .cancelled-notice {
+    color: $brand-primary;
+    text-decoration: none !important;
+    &::after {
+      content: ' ';
+    }
   }
 }

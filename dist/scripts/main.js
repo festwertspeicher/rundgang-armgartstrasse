@@ -751,8 +751,8 @@ google.maps.event.addDomListener(window, 'load', initialize);
 /* ========================================================================
  * Smoothscroll Plugin for Hash-events
  * ========================================================================
- * Copyright Paul Underwood
- * https://paulund.co.uk/smooth-scroll-to-internal-links-with-jquery
+ * From Github (Mili Abdo)
+ * @link https://stackoverflow.com/questions/21484195/smooth-scroll-and-accordion-conflict-bootstrap
  * ======================================================================== */
 
 
@@ -760,17 +760,17 @@ google.maps.event.addDomListener(window, 'load', initialize);
   'use strict';
 
   $(document).ready(function(){
-    $('a[href^="#"]').on('click',function (e) {
-        e.preventDefault();
-
-        var target = this.hash;
-        var $target = $(target);
-
-        $('html, body').stop().animate({
-            'scrollTop': $target.offset().top
-        }, 900, 'swing', function () {
-            window.location.hash = target;
-        });
+    $('a[href*="#"]:not([href="#"]):not([data-toggle])').click(function() {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+                $('html, body').animate({
+                    scrollTop: target.offset().top
+                }, 900, 'swing');
+                return false;
+            }
+        }
     });
   });
 

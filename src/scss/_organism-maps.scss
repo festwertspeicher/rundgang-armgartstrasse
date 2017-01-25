@@ -7,3 +7,21 @@
   width: 100%;
   height: $space-small-vertical * 20;
 }
+
+.floor {
+  margin-bottom: $space-large-vertical;
+}
+
+.img-map {
+  display: block;
+  @media (max-width: $screen-xs-max) {
+    display: none !important;
+  }
+}
+
+.img-map-90 {
+  display: none;
+  @media (max-width: $screen-xs-max) {
+    display: block !important;
+  }
+}

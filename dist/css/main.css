@@ -987,23 +987,19 @@ h3, .h3 {
   word-break: break-all; }
 
 h1, .h1 {
-  font-size: 3rem; }
+  font-size: 3.75rem; }
 
 h2, .h2 {
   font-size: 3rem; }
 
 h3, .h3 {
-  font-size: 3rem; }
+  font-size: 2.25rem; }
 
-h4, .h4 {
-  text-transform: uppercase;
-  font-weight: 400;
-  margin: 0 0 1rem; }
-
-h5, .h5 {
-  color: #d3a87c;
+h4, .h4, h5, .h5 {
+  font-size: 1.5rem;
+  color: #111;
   font-weight: 600;
-  margin: 1rem 0; }
+  margin: 0 0 1rem; }
 
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -1037,6 +1033,14 @@ p {
 
 .text-capitalize {
   text-transform: capitalize; }
+
+::selection {
+  color: #fff;
+  background: #d3a87c; }
+
+::-moz-selection {
+  color: #fff;
+  background: #d3a87c; }
 
 a {
   color: #d3a87c;
@@ -1177,10 +1181,37 @@ a.logo {
       display: none; } }
 
 .event-type::after {
-  content: ': '; }
+  content: ' '; }
 
 .event-language::before {
   content: ' '; }
+
+.day {
+  margin-bottom: 3rem; }
+
+.event {
+  margin-bottom: 2rem; }
+  .event:before, .event:after {
+    content: " ";
+    display: table; }
+  .event:after {
+    clear: both; }
+
+#symposium h3 {
+  margin: 0 0 1rem; }
+
+.event-more-collapse::after {
+  content: ' -'; }
+.event-more-collapse.collapsed::after {
+  content: ' +'; }
+
+.cancelled h5, .cancelled p {
+  text-decoration: line-through; }
+.cancelled .cancelled-notice {
+  color: #d3a87c;
+  text-decoration: none !important; }
+  .cancelled .cancelled-notice::after {
+    content: ' '; }
 
 #main {
   margin-top: 24rem; }
@@ -1192,6 +1223,21 @@ a.logo {
   margin: 2rem 0;
   width: 100%;
   height: 20rem; }
+
+.floor {
+  margin-bottom: 3rem; }
+
+.img-map {
+  display: block; }
+  @media (max-width: 767px) {
+    .img-map {
+      display: none !important; } }
+
+.img-map-90 {
+  display: none; }
+  @media (max-width: 767px) {
+    .img-map-90 {
+      display: block !important; } }
 
 .floor::after {
   content: ' '; }

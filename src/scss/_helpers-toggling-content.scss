@@ -14,10 +14,6 @@
   visibility: hidden;
 }
 
-.text-hide {
-  @include text-hide;
-}
-
 // New mixin to use as of v3.0.1
 @mixin text-hide() {
   font: #{0/0} a;
@@ -25,6 +21,10 @@
   text-shadow: none;
   background-color: transparent;
   border: 0;
+}
+
+.text-hide {
+  @include text-hide;
 }
 
 .hidden-text {
