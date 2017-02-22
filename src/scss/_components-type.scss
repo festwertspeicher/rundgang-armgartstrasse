@@ -7,7 +7,7 @@
 
 $text-color: $gray-base !default;
 $link-color: $brand-primary !default;
-$link-hover-color: darken($link-color, 15%) !default;
+$link-hover-color: $brand-primary !default;
 
 $font-family-base: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $font-size-base: 1.5rem !default; // 24pt
@@ -53,9 +53,10 @@ h3, .h3 {
   margin-top: $line-height-base-computed;
   margin-bottom: ($line-height-base-computed / 2);
   word-break: break-all;
+  margin-left: -0.1em;
 }
 
-h1, .h1 { font-size: $font-size-h1; }
+h1, .h1 { font-size: $font-size-h2; }
 h2, .h2 { font-size: $font-size-h2; }
 h3, .h3 { font-size: $font-size-h3; }
 
