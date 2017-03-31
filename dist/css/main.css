@@ -1259,6 +1259,9 @@ a.logo {
   .room-where {
     margin: 2rem 0 0; } }
 
+.image-gallery {
+  margin-bottom: 4rem; }
+
 .slick-loading, .slick-loading:before, .slick-loading:after {
   border-radius: 50%;
   width: 2.5em;
@@ -1327,3 +1330,17 @@ a.logo {
     margin-right: auto; } }
 .controlls p {
   margin-bottom: 0; }
+
+.vimeo-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto; }
+  .vimeo-container iframe, .vimeo-container object, .vimeo-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }

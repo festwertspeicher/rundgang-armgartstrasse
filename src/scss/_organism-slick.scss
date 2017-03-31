@@ -1,5 +1,8 @@
 @charset 'UTF-8';
 
+.image-gallery{
+  margin-bottom: $space-large-plus-vertical;
+}
 // loader
 //.slick-loading, .slick-loading:before, .slick-loading:after
 %extend_loader_1 {
