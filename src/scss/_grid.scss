@@ -70,6 +70,7 @@ $container-lg:                 $container-large-desktop !default;
 
 .container-fluid {
   @include container-fixed();
+  max-width: 1640px;
 }
 
 
