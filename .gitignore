@@ -6,5 +6,7 @@ index.sublime-workspace
 src/img/raumplan/map1.ai
 src/img/raumplan/map2.ai
 src/img/raumplan/map3.ai
-src/img/slider/rundgang*.jpg
-dist/img/slider/rundgang*.jpg
+src/img/slider/pics/rundgang*.jpg
+dist/img/slider/pics/rundgang*.jpg
+src/img/slider/thumbs/rundgang*.jpg
+dist/img/slider/thumbs/rundgang*.jpg

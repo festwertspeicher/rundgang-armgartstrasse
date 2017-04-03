@@ -1261,7 +1261,49 @@ a.logo {
     margin: 2rem 0 0; } }
 
 .image-gallery {
-  margin-bottom: 4rem; }
+  margin-bottom: 4rem;
+  position: relative; }
+
+.slick-initialized .controll-mouse-left {
+  cursor: url(..\img\slider\arrow-left.png), auto;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 50%;
+  z-index: 1000; }
+
+.slick-initialized .controll-mouse-right {
+  cursor: url(..\img\slider\arrow-right.png), auto;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  right: 0;
+  z-index: 1000; }
+
+.slider-nav {
+  margin: 1rem 0;
+  cursor: grab; }
+  @media (max-width: 767px) {
+    .slider-nav {
+      display: none !important; } }
+  .slider-nav .picture {
+    margin: 0 10px;
+    position: relative; }
+  .slider-nav .slick-current:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(211, 168, 124, 0.8); }
 
 .slick-loading, .slick-loading:before, .slick-loading:after {
   border-radius: 50%;
@@ -1319,9 +1361,6 @@ a.logo {
   content: "\a0\2192"; }
 .slick-next:hover {
   text-decoration: underline; }
-
-.slick-initialized .slick-slide {
-  cursor: url(..\img\slider\arrow.png), auto; }
 
 @media (max-width: 767px) {
   .controlls button, .controlls button.pull-right {

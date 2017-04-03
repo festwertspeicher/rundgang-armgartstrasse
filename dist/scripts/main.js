@@ -1030,16 +1030,23 @@ var slick = (function () {
   "use strict";
 
   var pub = {}, // Stands for public, gets returned
-    $slider, $status, $customPrevArrow, $customNextArrow
+    $slider, $sliderNav, $status, $customPrevArrow, $customNextArrow, $controllMouseRight, $controllMouseLeft
 
   pub.init = function () {
     $slider = $(".slider");
+    $sliderNav = $('.slider-nav');
     $status = $("#pagination");
     $customPrevArrow = $(".slick-prev");
     $customNextArrow = $(".slick-next");
+    $controllMouseLeft = $(".controll-mouse-left");
+    $controllMouseRight = $(".controll-mouse-right");
 
     $slider.on('init reInit afterChange', pub.updateCounter);
     $slider.on('click', pub.nextSlide);
+    // mouse click on slider
+    $controllMouseLeft.on('click', pub.prevSlide);
+    $controllMouseRight.on('click', pub.nextSlide);
+    //mouse click on controll-arrows beneath
     $customPrevArrow.on('click', pub.prevSlide);
     $customNextArrow.on('click', pub.nextSlide);
 
@@ -1054,8 +1061,26 @@ var slick = (function () {
       swipeToSlide: true,
       adaptiveHeight: true,
       prevArrow: false,
-      nextArrow: false
+      nextArrow: false,
+      asNavFor: '.slider-nav'
     });
+
+    $sliderNav.slick({
+      slidesToShow: 5,
+      slidesToScroll: 10, //to load ten pictures via lazy load
+      slide: ".picture",
+      lazyLoad: "ondemand",
+      infinite: true,
+      dots: false,
+      swipeToSlide: true,
+      adaptiveHeight: true,
+      prevArrow: false,
+      nextArrow: false,
+      asNavFor: '.slider',
+      centerMode: true,
+      centerPadding: '60px',
+      focusOnSelect: true
+    })
   };
 
   pub.updateCounter = function(event, slick, currentSlide, nextSlide) {
